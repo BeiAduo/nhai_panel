@@ -3,9 +3,33 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.2/echarts.min.js')
   body
-    .container.mx-auto.flex.flex-row.justify-between.items-center.ring-1.h-screen.text-sm
-      div(class="w-1/12")
-        | 222
+    .container.mx-auto.flex.flex-row.justify-between.text-sm
+      div(class="w-1/12 ring-1 text-center py-4 h-screen")
+        p(class='text-base py-4')
+          | 首页
+        p(class='text-base py-4')
+          | 网站
+        p(class='text-base py-4')
+          | FTP
+        p(class='text-base py-4')
+          | 数据库
+        p(class='text-base py-4')
+          | 安全
+        p(class='text-base py-4')
+          | 监控
+        p(class='text-base py-4')
+          | 大屏监控
+        p(class='text-base py-4')
+          | 日志
+        p(class='text-base py-4')
+          | 终端
+        p(class='text-base py-4')
+          | 计划任务
+        p(class='text-base py-4')
+          | 软件商店
+        p(class='text-base py-4')
+          | 面板设置
       div(class="w-11/12")
             block content

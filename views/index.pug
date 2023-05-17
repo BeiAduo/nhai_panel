@@ -1,9 +1,8 @@
 extends layout
 
 block content
-
-    .flex.justify-between.items-center.my-4.p-4
-        div #{ systemInfo.osType }  #{ systemInfo.osVersion }  #{ systemInfo.architecture } - NodeJs[ #{ systemInfo.nodeVersion } ]
+    .flex.justify-between.my-2.px-4.py-2.ring-1.rounded-lg.mx-4
+        div #{ systemInfo.osType }  #{ systemInfo.osVersion }  #{ systemInfo.architecture } - NodeJs[ #{ systemInfo.nodeVersion } ] 已不间断运行: 59天
         div
             span.mx-1.text-sm 到期时间：永久授权
             span.mx-1.text-sm 7.9.10
@@ -11,7 +10,7 @@ block content
             button.px-2.py-1.bg-orange-500.rounded-xl.mx-1.text-sm.text-white  修复
             button.px-2.py-1.bg-blue-500.rounded-xl.mx-1.text-sm.text-white  重启
 
-    .flex.justify-around.items-center.h-32.my-12
+    .flex.justify-around.items-center.my-4.p-8.ring-1.rounded-lg.mx-4
         .flex.flex-col.justify-center.items-center
             h1.text-center.text-gray-700 运行流畅
             .h-28.w-28.ring-1.rounded-full.flex.justify-center.items-center.my-4
@@ -30,7 +29,29 @@ block content
         .flex.flex-col.justify-center.items-center
             h1.text-center.text-gray-700 /
             .h-28.w-28.ring-1.rounded-full.flex.justify-center.items-center.my-4
-              h1 90%
+                h1 90%
             h1.text-center.text-gray-700 399.01G / 914.38G
+    .flex.justify-around.items-center.h-32.my-12.p-4.ring-1.rounded-lg.mx-4
+        .flex.flex-col.justify-center.items-center.ring-1.p-4.rounded-lg
+                    p 网站
+                    p 15
+        .flex.flex-col.justify-center.items-center.ring-1.p-4.rounded-lg
+                    p FTP
+                    p 3
+        .flex.flex-col.justify-center.items-center.ring-1.p-4.rounded-lg
+                    p 数据库
+                    p 15
+        .flex.flex-col.justify-center.items-center.ring-1.p-4.rounded-lg
+                    p 风险
+                    p 12
+        .flex.flex-col.justify-center.items-center.ring-1.p-4.rounded-lg
+                    p 任务
+                    p 17
+    .flex.justify-beteen.items-center.my-12.p-4.ring-1.rounded-lg.mx-4
+        .flex.flex-col.justify-center.items-center.ring-1.p-4.rounded-lg.w-full.h-64
 
+                    p 流量
+
+        .flex.flex-col.justify-center.items-center.ring-1.p-4.rounded-lg.w-full.h-64
+                    p 硬盘
 
