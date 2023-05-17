@@ -1,0 +1,36 @@
+extends layout
+
+block content
+
+    .flex.justify-between.items-center.my-4.p-4
+        div #{ systemInfo.osType }  #{ systemInfo.osVersion }  #{ systemInfo.architecture } - NodeJs[ #{ systemInfo.nodeVersion } ]
+        div
+            span.mx-1.text-sm 到期时间：永久授权
+            span.mx-1.text-sm 7.9.10
+            button.px-2.py-1.bg-blue-500.rounded-xl.mx-1.text-sm.text-white  更新
+            button.px-2.py-1.bg-orange-500.rounded-xl.mx-1.text-sm.text-white  修复
+            button.px-2.py-1.bg-blue-500.rounded-xl.mx-1.text-sm.text-white  重启
+
+    .flex.justify-around.items-center.h-32.my-12
+        .flex.flex-col.justify-center.items-center
+            h1.text-center.text-gray-700 运行流畅
+            .h-28.w-28.ring-1.rounded-full.flex.justify-center.items-center.my-4
+                h1 90%
+            h1.text-center.text-gray-700 运行流畅
+        .flex.flex-col.justify-center.items-center
+            h1.text-center.text-gray-700 40 核心
+            .h-28.w-28.ring-1.rounded-full.flex.justify-center.items-center.my-4
+                h1 40%
+            h1.text-center.text-gray-700 40 核心
+        .flex.flex-col.justify-center.items-center
+            h1.text-center.text-gray-700 内存使用率
+            .h-28.w-28.ring-1.rounded-full.flex.justify-center.items-center.my-4
+                h1 90%
+            h1.text-center.text-gray-700 26254 / 128886(MB)
+        .flex.flex-col.justify-center.items-center
+            h1.text-center.text-gray-700 /
+            .h-28.w-28.ring-1.rounded-full.flex.justify-center.items-center.my-4
+              h1 90%
+            h1.text-center.text-gray-700 399.01G / 914.38G
+
+
